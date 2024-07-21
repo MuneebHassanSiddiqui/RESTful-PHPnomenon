@@ -21,7 +21,7 @@ Email = '$student_Email' WHERE id = $student_id ";
 
 
 if (mysqli_query($conn, $mySql)) {
-    echo json_encode(array('mesasge' => 'Record Updated!', 'status' => true));
+    echo json_encode(array('message' => 'Record Updated!', 'status' => true));
 } else {
-    echo json_encode(array('mesasge' => 'Record Can not Updated.....', 'status' => false));
+    echo json_encode(array('message' => 'Record Can not Updated.....', 'status' => false));
 }

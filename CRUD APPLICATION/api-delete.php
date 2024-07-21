@@ -18,7 +18,7 @@ $student_id = $data['Stu_id'];
 $mySql = "DELETE FROM student_information WHERE id = $student_id";
 
 if (mysqli_query($conn, $mySql)) {
-    echo json_encode(array("message" => "Record deleted", "status" => true));
+    echo json_encode(array("message" => "Record deleted Successfully✔", "status" => true));
 } else {
     echo json_encode(array("message" => "Record not deleted", "status" => false));
 }
