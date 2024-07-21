@@ -20,5 +20,5 @@ if (mysqli_num_rows($res) > 0) {
     $Fetch_data = mysqli_fetch_all($res, MYSQLI_ASSOC);
     echo json_encode($Fetch_data);
 } else {
-    echo json_encode(array('message' => 'no Record Found', 'status' => false));
+    echo json_encode(array('message' => 'No Record Found❌❌', 'status' => false));
 }
